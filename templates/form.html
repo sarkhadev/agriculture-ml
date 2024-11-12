@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+N_Nitrogen,P_Phosphorus,K_Potassium,Temperature,Humidity,PH,Rainfall
+{% block body %}
+    <form action="/" method="post">
+        <table>
+            <tr>
+                <td>Nitrogen(N)</td>
+                <td><input type="number" step=any name="n_nitrogen" required></td>
+            </tr>
+            <tr>
+                <td>Phosphorus(P)</td>
+                <td><input type="number" step=any name="p_phosphorus" required></td>
+            </tr>
+            <tr>
+                <td>Potassium(K)</td>
+                <td><input type="number" step=any name="k_potassium" required></td>
+            </tr>
+            <tr>
+                <td>Temperature</td>
+                <td><input type="number" step=any name="temperature" required></td>
+            </tr>
+            <tr>
+                <td>Humidity</td>
+                <td><input type="number" step=any name="humidity" required></td>
+            </tr>
+            <tr>
+                <td>PH</td>
+                <td><input type="number" step=any name="ph" required></td>
+            </tr>
+            <tr>
+                <td>Rainfall</td>
+                <td><input type="number" step=any name="rainfall" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" style="margin-top: 10px;"></td>               
+            </tr>
+        </table>
+
+        
+    </form>
+{% endblock %}
